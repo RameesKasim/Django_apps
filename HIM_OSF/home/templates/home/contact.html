@@ -1,0 +1,62 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}
+Contact
+{% endblock %}
+
+{% block body %}
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 section-title">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="{% static 'home/imgage/team/01.jpg'%}" alt="..." class="team-img">
+          <div class="caption">
+            <h4>John Doe</h4>
+            <p>President</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4>Mike Doe</h4>
+            <p>Secretary</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4>Jane Doe</h4>
+            <p>Treasurer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 team">
+        <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="team-img">
+          <div class="caption">
+            <h4>Karen Doe</h4>
+            <p>Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}
+<div id="contact">
+  <div class="container social" >
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block body %}
+ <div class="container">
+        <br><br><br>
+        <div class="login ">
+        <div class="main-agileits">
+		 <div class="text-center "><h3>Registration Form<br><br></h3></div>
+            <form action="" method="POST" enctype="multipart/form-data">
+			 <b><div clas="row " >
+			    <div class="col-md-2 col-md-offset-1">First Name </div>
+				<div class="col-md-3 col-md-offset-0"><input type="text" id="fname" name="fname" placeholder="FIRST NAME" required></div>
+			    <div class="col-md-2 col-md-offset-0">Last Name </div>
+				<div class="col-md-3 col-md-offset-0"><input type="text" id="lname" name="lname" placeholder="LAST NAME" required></div><br><br>
+			  </div><br>
+			  <div clas="row" >
+			    <div class="col-md-2 col-md-offset-1">Email </div>
+				<div class="col-md-3 col-md-offset-0"><td><input type="email" id="email" name="email" placeholder="abc@email.com"></div>
+			    <div class="col-md-2 col-md-offset-0">Mobile Number </div>
+				<div class="col-md-3 col-md-offset-0"><input type="tel" pattern="[7,8,9][0-9]{9}" minlength='10' maxlength='10' id="tel" name="tel" oninvalid="setCustomValidity('please enter a valid telephone number')"placeholder="Phone Number"></div><br><br>
+			  </div><br>
+			  <div clas="row" >
+			    <div class="col-md-2 col-md-offset-1">User Name </div>
+				<div class="col-md-3 col-md-offset-0"><input type="text" id="username" name="username" placeholder="username"></div>
+			    <div class="col-md-2 col-md-offset-0">Profile Picture </div>
+				<div class="col-md-3 col-md-offset-0"><input type="file" accept="image/*" name="img" ></div><br><br>
+			  </div><br>
+			  <div clas="row" >
+			    <div class="col-md-2 col-md-offset-1">Password </div>
+				<div class="col-md-3 col-md-offset-0"><input type="password" id="paswrd" name="paswrd" placeholder="PASSWORD" required></div>
+			    <div class="col-md-2 col-md-offset-0">Confirm Password </div>
+				<div class="col-md-3 col-md-offset-0"><input type="password" id="cpaswrd" name="cpaswrd" placeholder="CONFIRM PASSWORD" required></div><br><br><br>
+			  </div>
+			  <div clas="row" >
+			    <div class="col-md-2 col-md-offset-1">Type </div>
+                  <div class="col-md-3 col-md-offset-0"><select id="type" style="width: 200px;text-align: center; ">
+                                                         <option>Member</option>
+                                                         <option>Secretory</option>
+                                                         <option>Treasurer</option>
+                                                        </select></div>
+			    <div class="col-md-2 col-md-offset-0">Subscription Amount </div>
+				<div class="col-md-3 col-md-offset-0"><input type="number" id="subs" name="subs" placeholder="amount" required></div><br><br><br>
+			  </div>
+
+			  <div clas="row" >
+			     <div class="col-md-4 col-md-offset-4"><input type="submit" class='btn-info' name='submit' value='      Register      ' ></div>
+				 <div class="col-md-offset-0"><input type="Reset"  class='btn-info' value='      Reset     '></div>
+			    </div></br>
+			</form>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+    </div>
+{% endblock %}

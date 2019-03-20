@@ -1,7 +1,12 @@
-from home.views import indexView
+from home.views import *
 from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
+
+
 urlpatterns = [
-     path('', indexView.as_view(), name='index' )
- ]
+     path('', IndexView.as_view(), name='index'),
+     path('home/', IndexView.as_view(), name='index'),
+     path('contact/', AboutView.as_view(), name='about'),
+     path('help/', RequestView.as_view(), name='req_reg'),
+     path('help_req/', request_help, name='request_help'),
+     path('view-request/', ViewRequest.as_view(), name='view'),
+]

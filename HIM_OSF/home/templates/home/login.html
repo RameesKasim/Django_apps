@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+  <div class="container" align="center">
+        <br><br><br>
+        <div class="login" style="width: 600px;align-content: inherit !important;">
+        <div class="main-agileits">
+		 <div class="text-center "><h3>Login<br><br></h3></div>
+              <form  method="POST" action="/login_action/">
+                {% csrf_token %}
+                {{ form }}
+                <div clas="row " >
+			    <div class="col-md-2 col-md-offset-1"> </div>
+				<div class="col-md-3 col-md-offset-0"><input type="submit" value="Login"
+                       class="btn btn-primary pull-right" />
+                <input type="hidden" name="next" value="{{ next }}" /></div>
+			    </div>
+
+            </form>
+        </div>
+        </div>
+    </div>
+{% endblock %}
